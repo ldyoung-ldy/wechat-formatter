@@ -7,22 +7,23 @@ body {
 }
 
 .app-container {
-  max-width: 1200px;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 20px;
+  padding: 30px;
 }
 
 .app-title {
   text-align: center;
-  font-size: 2em;
+  font-size: 2.5em;
   color: #333;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 .editor-container {
   display: flex;
-  gap: 20px;
-  height: 60vh;
+  gap: 30px;
+  height: 75vh;
+  min-height: 500px;
 }
 
 .markdown-input,
@@ -247,5 +248,32 @@ body {
 
 .preview-area li {
   margin-bottom: 8px;
+}
+
+/* Responsive styles for larger screens */
+@media (min-width: 1200px) {
+  .app-container {
+    padding: 40px 60px;
+  }
+  
+  .editor-container {
+    height: 80vh;
+  }
+  
+  .markdown-input,
+  .preview-area {
+    font-size: 18px;
+    padding: 25px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .app-container {
+    max-width: 1600px;
+  }
+  
+  .editor-container {
+    height: 85vh;
+  }
 }
 
