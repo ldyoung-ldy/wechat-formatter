@@ -250,6 +250,29 @@ body {
   margin-bottom: 8px;
 }
 
+/* Styles for smaller screens (e.g., mobile phones) */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 15px;
+  }
+
+  .editor-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .markdown-input,
+  .preview-area {
+    height: 50vh; /* Give each section a portion of the viewport height */
+    min-height: 300px;
+  }
+  
+  .footer {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
 /* Responsive styles for larger screens */
 @media (min-width: 1200px) {
   .app-container {
